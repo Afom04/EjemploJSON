@@ -1,0 +1,27 @@
+[
+    {
+        "nombre": "juan perez",
+        "edad": 28,
+        "email": "juanPerez@gmail.com"
+    },
+    {
+        "nombre": "Ana Garcia",
+        "edad": 32,
+        "email": "anaGarcia@gmail.com"
+    },
+    {
+        "nombre": "Gabriela Moreno",
+        "edad": 20,
+        "email": "gabrielaMoreno@gmail.com"
+    },
+    {
+        "nombre": "Noe Arcos",
+        "edad": 28,
+        "email": "narcos@gmail.com"
+    },
+    {
+        "nombre": "Sara Herrera",
+        "edad": 20,
+        "email": "saraHerrera@gmail.com"
+    }
+]
