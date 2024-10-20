@@ -7,8 +7,6 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
     />
   </head>
 
@@ -18,7 +16,6 @@
     </header>
     <br />
     <hr />
-    <!-- <input type="file" id="filegGet" accept=".json" name="filegGet" /> -->
     <div class="input-group mb-3">
       <label for="filegGet" class="form-label">Cargar archivo JSON:</label>
       <div class="custom-file">
@@ -29,9 +26,7 @@
           accept=".json"
           name="filegGet"
         />
-        <label class="custom-file-label" for="inputGroupFile02"
-          >Choose file</label
-        >
+        <label class="custom-file-label" for="filegGet">Choose file</label>
       </div>
     </div>
 
@@ -43,16 +38,10 @@
             type="button"
             id="dropdownRegionButton"
             data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
           >
             Filtrar por Región
           </button>
-          <div
-            class="dropdown-menu"
-            id="regionDropdown"
-            aria-labelledby="dropdownRegionButton"
-          >
+          <div class="dropdown-menu" id="regionDropdown">
             <a class="dropdown-item" href="#" data-value="">Todas</a>
           </div>
         </div>
@@ -64,16 +53,10 @@
             type="button"
             id="dropdownDeptButton"
             data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
           >
             Filtrar por Departamento
           </button>
-          <div
-            class="dropdown-menu"
-            id="departamentoDropdown"
-            aria-labelledby="dropdownDeptButton"
-          >
+          <div class="dropdown-menu" id="departamentoDropdown">
             <a class="dropdown-item" href="#" data-value="">Todos</a>
           </div>
         </div>
@@ -81,11 +64,7 @@
     </div>
 
     <div class="table-responsive">
-      <table
-        class="table table-sm table-hover table-striped"
-        id="jsonTable"
-        border="1"
-      >
+      <table class="table table-sm table-hover table-striped" id="jsonTable">
         <thead>
           <tr>
             <th scope="col">Region</th>
@@ -95,12 +74,13 @@
             <th scope="col">Municipio</th>
           </tr>
         </thead>
-        <tbody>
-          <!--Aqui se cargan los datos-->
-        </tbody>
+        <tbody></tbody>
       </table>
     </div>
-    <script src="js/index.js"></script>
+
+    <script src="js/controller.js"></script>
+    <script src="js/model.js"></script>
+    <!-- Incluye scripts necesarios de Bootstrap y jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
